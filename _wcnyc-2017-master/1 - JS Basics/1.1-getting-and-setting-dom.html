@@ -55,11 +55,11 @@
     'use strict';
     
     // Get the nodes for the variables below
-    var siteTitle = '__CHANGE__',
-        pageTitle = '__CHANGE__',
-        pageContent = '__CHANGE__',
-        username = '__CHANGE__',
-        pTags = '__CHANGE__';
+    var siteTitle = document.querySelector('p.site-title'),
+        pageTitle = document.querySelector('h1.entry-title'),
+        pageContent = document.querySelector('div.entry-content'),
+        username = document.getElementById('username'),
+        pTags = document.querySelectorAll('p');
 
     // This code will display the nodes in the Console
     console.log( 'Site Title: ', siteTitle );
@@ -69,13 +69,13 @@
     console.log( 'P Tags:  ', pTags );
 
     // Change the values of the fields below
-    siteTitle.innerText = '__CHANGE__';
-    pageTitle.innerText = '__CHANGE__';
-    pageContent.innerHTML = '__CHANGE__';
-    username.value = '__CHANGE__';
-    for( let p of pTags ) {
-        p.innerHTML = '__CHANGE__';
-    }
+    siteTitle.innerText = 'Hacked!!!';
+    pageTitle.innerText = 'Gotcha!!!';
+    pageContent.innerHTML = '<p>New Text</p>';
+    username.value = 'lancemonotone';
+    /*for( let p of pTags ) {
+        p.innerHTML = '<strong>New</strong>';
+    }*/
 
 </script>
 
